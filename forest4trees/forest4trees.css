@@ -18,3 +18,39 @@ canvas {
 .canvasClass{
 
 }
+
+.arm_frames {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    min-height:200px;
+    min-width:200px;
+    /*border: 1px solid #eaeaea;*/
+}
+
+.arm {
+    background-color: #FFFFFF;
+    border-radius: 0px;
+    text-align: center;
+    font-family: Verdana, Arial, Sans-Serif;
+    color: #FFFFFF;
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.bandit_table {
+    top: 0px;
+    left: 0px;
+    margin: 0 auto 0 auto;
+}
+
+td .bandit_table {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+}
