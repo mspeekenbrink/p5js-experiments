@@ -19,7 +19,11 @@ canvas {
 
 }
 
-.arm_frames {
+.container {
+  padding: 10px 0px 0px 0px;
+}
+
+.tree_frames {
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     min-height:200px;
@@ -27,7 +31,7 @@ canvas {
     /*border: 1px solid #eaeaea;*/
 }
 
-.arm {
+.tree {
     background-color: #FFFFFF;
     border-radius: 0px;
     text-align: center;
@@ -44,13 +48,13 @@ canvas {
     position: relative;
 }
 
-.bandit_table {
+.tree_table {
     top: 0px;
     left: 0px;
     margin: 0 auto 0 auto;
 }
 
-td .bandit_table {
+td .tree_table {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px;
 }

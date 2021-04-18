@@ -82,11 +82,11 @@ for(var i=0; i < all_stims.length; i++) {
   all_options.push(stim);
 }
 
-let gridHTML='<table class="bandit_table">', WIDTH=grid_size[1], HEIGHT=grid_size[0];
+let gridHTML='<table class="tree_table">', WIDTH=grid_size[1], HEIGHT=grid_size[0];
 for (var i = 1; i <= HEIGHT; i++){
   gridHTML += '<tr>';
   for (var j = 1; j <= WIDTH; j++){
-    gridHTML += '<td align="center" class="arm_frames"><div id="arm_frame_' + i + 'x' + j + '"></div></td>';
+    gridHTML += '<td align="center" class="tree_frames"><div id="tree_frame_' + i + 'x' + j + '"></div></td>';
   }
   gridHTML += '</tr>';
 }
@@ -99,10 +99,10 @@ for (var i = 1; i <= HEIGHT; i++){
   for (var j = 1; j <= WIDTH; j++){
     //console.log((i-1)*HEIGHT + j - 1);
     let y = document.createElement('DIV');
-    y.setAttribute("id", "arm_" + ((i-1)*HEIGHT + j - 1));
-    y.setAttribute("class", "arm");
-    document.getElementById('arm_frame_' + i + 'x' + j).appendChild(y);
-    let myp5 = new p5(all_options[(i-1)*HEIGHT + j - 1].draw, 'arm_' + ((i-1)*HEIGHT + j - 1));
+    y.setAttribute("id", "tree_" + ((i-1)*HEIGHT + j - 1));
+    y.setAttribute("class", "tree");
+    document.getElementById('tree_frame_' + i + 'x' + j).appendChild(y);
+    let myp5 = new p5(all_options[(i-1)*HEIGHT + j - 1].draw, 'tree_' + ((i-1)*HEIGHT + j - 1));
     //console.log("creating arm " + ((i-1)*HEIGHT + j - 1));
   }
 }

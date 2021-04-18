@@ -18,3 +18,12 @@ canvas {
 .canvasClass{
 
 }
+
+.button {
+    position: fixed;
+    bottom: 10px;
+    align: center;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* margin-left: -104.5px; /*104.5px is half of the button's width*/
+}
